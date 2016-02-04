@@ -1,0 +1,106 @@
+$form-ms-bg:			#efefef;
+$form-ms-br: 			3px;
+$form-ms-i-b: 			1px solid #ccc;
+
+$form-ms-btn-bg:		#3498db;
+$form-ms-btn-cl:		#ffffff;
+$form-ms-btn-br:		$form-ms-br;
+$form-ms-btn-b:			1px solid darken($form-ms-btn-bg, 10%);
+
+.form-container {
+
+}
+
+.status-buttons {
+	margin: 25px 0 0;
+	text-align: center;
+	a {
+		text-decoration: none;
+		display: inline-block;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		padding: 15px;
+		opacity: 0.5;
+		span {
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			background: #fff;
+			color: #333;
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			border-radius: 100%;
+		}
+		&.active {
+			opacity: 1;
+			span {
+				background: $form-ms-btn-bg;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.form-multistep {
+	background: $form-ms-bg;
+	padding: 25px;
+	border-radius: $form-ms-br;
+	input {
+		font-size: 0.9em;
+		width: 100%;
+		margin: 5px 0;
+		border-radius: $form-ms-br;
+		border: $form-ms-i-b;
+		&[type="text"] {
+			padding: 10px;
+		}
+		&[type="radio"] {
+			float: left;
+			width: auto;
+			margin-right: 10px;
+		}
+	}
+	label {
+		display: inline;
+		cursor: pointer;
+	}
+	h3 {
+		font-size: 1.25em;
+		margin: 0 0 15px;
+		font-weight: bold;
+		color: #333;
+	}
+	.btn {
+		cursor: pointer;
+		display: block;
+		padding: 10px;
+		margin: 5px 0 0;
+		text-align: center;
+		background: $form-ms-btn-bg;
+		color: $form-ms-btn-cl;
+		border: $form-ms-btn-b;
+		border-radius: $form-ms-btn-br;
+		text-decoration: none;
+		width: 100%;
+		font-size: inherit;
+		&:hover {
+			background: darken($form-ms-btn-bg, 5%);
+		}
+	}
+}
+
+pre {
+	margin: 25px 0;
+	display: block;
+	padding: 10px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	word-break: break-all;
+	word-wrap: break-word;
+	color: #303030;
+	background-color: #ebebeb;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+}

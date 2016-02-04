@@ -1,0 +1,16 @@
+<div class="form-container">
+	<div>
+		<div class="status-buttons" class="text-center">
+			<a ui-sref-active="active" ui-sref=".profile"><span>1</span> Profile</a>
+			<a ui-sref-active="active" ui-sref=".interests"><span>2</span> Interests</a>
+			<a ui-sref-active="active" ui-sref=".payment"><span>3</span> Payment</a>
+		</div>
+	</div>
+	<form class="form-multistep" id="signup-form" ng-submit="processForm()">
+		<div id="form-views" ui-view></div>
+	</form>
+</div>
+
+<pre>
+	{{ formData }}
+</pre>
